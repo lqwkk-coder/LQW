@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#b42318" />
     <title>党建知识竞赛赛前练习</title>
+    <link rel="stylesheet" href="styles.css?v=20260606-2" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">知</div>
+          <div>
+            <strong>党建知识竞赛</strong>
+            <span>赛前练习系统</span>
+          </div>
+        </div>
+        <nav id="main-nav" class="main-nav" aria-label="主导航">
+          <button data-view="dashboard" class="active">学习概览</button>
+          <button data-action="sequence">顺序练习</button>
+          <button data-view="random">随机练习</button>
+          <button data-action="wrong">错题复习</button>
+          <button data-action="risk">风险题练习</button>
+          <button data-view="simulation">赛制模拟</button>
+          <button data-view="rules">竞赛规则</button>
+        </nav>
+        <div class="sidebar-foot">
+          <span>题库共 301 题</span>
+          <button id="clear-data" class="link-button">清空练习记录</button>
+        </div>
+      </aside>
+
+      <header class="mobile-header">
+        <div class="brand-mark">知</div>
+        <strong>党建知识竞赛</strong>
+        <button id="menu-toggle" aria-label="打开菜单">菜单</button>
+      </header>
+
+      <main id="app" class="main-content" tabindex="-1"></main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="data/questions.js?v=20260606-2"></script>
+    <script src="core.js?v=20260606-2"></script>
+    <script src="app.js?v=20260606-2"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#b42318" />
+    <title>党建知识竞赛赛前练习</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
